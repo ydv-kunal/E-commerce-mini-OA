@@ -1,0 +1,129 @@
+.container {
+  padding: 24px 40px;
+  font-family: sans-serif;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+
+.layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+
+/* CARD */
+
+.card {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 11px;
+  background: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* CART */
+
+.cart {
+  width: 280px;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.cart > div {
+  margin-bottom: 10px;
+}
+
+.cart input {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.cart hr {
+  margin: 15px 0;
+}
+
+.cart p {
+  font-weight: 500;
+}
+
+.empty-cart-box {
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  background: white;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  font-weight: 500;
+}
+
+
+/* filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filters button {
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #000;
+}
+
